@@ -1,0 +1,62 @@
+# Baseline Configuration for Reversal Curse Research
+# Training: 2 epochs on forward-only data
+# This serves as the control group to measure reversal curse severity
+
+base_model: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+model_type: LlamaForCausalLM
+tokenizer_type: LlamaTokenizer
+
+# Dataset - Forward only (original text)
+datasets:
+  - path: /home/ved/code/axolotl/research/reversal_curse/data/processed/forward.jsonl
+    ds_type: json
+    type: completion
+    field: text
+
+# Training for 2 epochs on forward data
+# This gives same total exposure as 1 epoch on combined (forward+reversed)
+num_epochs: 2
+
+# LoRA Configuration
+adapter: lora
+lora_r: 32
+lora_alpha: 16
+lora_dropout: 0.05
+lora_target_linear: true
+
+# Training parameters
+sequence_len: 1024
+sample_packing: true
+pad_to_sequence_len: true
+
+micro_batch_size: 4
+gradient_accumulation_steps: 4
+eval_batch_size: 4
+
+learning_rate: 0.0002
+lr_scheduler: cosine
+warmup_ratio: 0.1
+weight_decay: 0.01
+
+optimizer: adamw_torch_fused
+gradient_checkpointing: true
+
+# Precision
+bf16: auto
+tf32: false
+
+# Output
+output_dir: /home/ved/code/axolotl/research/reversal_curse/results/baseline
+logging_steps: 10
+save_strategy: epoch
+saves_per_epoch: 1
+
+# Disable validation (using separate eval script)
+val_set_size: 0.0
+
+# Disable flash attention if not available
+flash_attention: false
+
+# Disable wandb (using local logging only)
+# wandb_project:
+# wandb_run_id:
