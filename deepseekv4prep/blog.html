@@ -314,7 +314,7 @@
   <figcaption><strong>Figure 1 from the paper.</strong> Left: the transformer block — Engram fires first, then attention, then MoE. Right: inside the Engram module — 2-gram and 3-gram embeddings are retrieved via hashing, concatenated, projected, and gated against the current hidden state via a scaled dot product. A short causal conv refines the output before the residual add.</figcaption>
 </figure>
 
-<h3>Phase 1 — Sparse Retrieval via Hashed N-grams</h3>
+<h3>Sparse Retrieval via Hashed N-grams</h3>
 
 <p>
   Before any embedding lookup, raw token IDs are first passed through a <strong>tokenizer compression</strong>
@@ -345,7 +345,7 @@
   e<sub>t</sub> = concat over n=2..N, k=1..K of e<sub>t,n,k</sub>
 </div>
 
-<h3>Phase 2 — Context-aware Gating</h3>
+<h3>Context-aware Gating</h3>
 
 <p>
   The retrieved embedding <strong>e<sub>t</sub></strong> is a static, context-independent prior.
@@ -466,16 +466,19 @@
 
 <table class="results">
   <thead>
-    <tr><th>Benchmark</th><th>Baseline (MoE only)</th><th>Engram-27B</th><th>Gain</th></tr>
+    <tr><th>Benchmark</th><th>Category</th><th>MoE-27B</th><th>Engram-27B</th><th>Gain</th></tr>
   </thead>
   <tbody>
-    <tr><td>MMLU</td><td>—</td><td>—</td><td class="pos">+3.4</td></tr>
-    <tr><td>CMMLU</td><td>—</td><td>—</td><td class="pos">+4.0</td></tr>
-    <tr><td>BBH (reasoning)</td><td>—</td><td>—</td><td class="pos">+5.0</td></tr>
-    <tr><td>ARC-Challenge</td><td>—</td><td>—</td><td class="pos">+3.7</td></tr>
-    <tr><td>HumanEval (code)</td><td>—</td><td>—</td><td class="pos">+3.0</td></tr>
-    <tr><td>MATH</td><td>—</td><td>—</td><td class="pos">+2.4</td></tr>
-    <tr><td>Multi-Query NIAH (long ctx)</td><td>84.2</td><td>97.0</td><td class="pos">+12.8</td></tr>
+    <tr><td>MMLU</td><td>Knowledge</td><td>57.4</td><td>60.4</td><td class="pos">+3.0</td></tr>
+    <tr><td>MMLU-Redux</td><td>Knowledge</td><td>60.6</td><td>64.0</td><td class="pos">+3.4</td></tr>
+    <tr><td>CMMLU</td><td>Knowledge</td><td>57.9</td><td>61.9</td><td class="pos">+4.0</td></tr>
+    <tr><td>ARC-Challenge</td><td>Reasoning</td><td>70.1</td><td>73.8</td><td class="pos">+3.7</td></tr>
+    <tr><td>BBH</td><td>Reasoning</td><td>50.9</td><td>55.9</td><td class="pos">+5.0</td></tr>
+    <tr><td>DROP</td><td>Reading</td><td>55.7</td><td>59.0</td><td class="pos">+3.3</td></tr>
+    <tr><td>HumanEval</td><td>Code</td><td>37.8</td><td>40.8</td><td class="pos">+3.0</td></tr>
+    <tr><td>GSM8K</td><td>Math</td><td>58.4</td><td>60.6</td><td class="pos">+2.2</td></tr>
+    <tr><td>MATH</td><td>Math</td><td>28.3</td><td>30.7</td><td class="pos">+2.4</td></tr>
+    <tr><td>Multi-Query NIAH</td><td>Long context</td><td>84.2</td><td>97.0</td><td class="pos">+12.8</td></tr>
   </tbody>
 </table>
 
