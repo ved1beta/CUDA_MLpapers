@@ -284,7 +284,7 @@
 </p>
 
 <figure>
-  <img src="ing2.png" alt="N-grams by NLP: unigrams, bigrams, trigrams over the sentence This is a Sentence">
+  <img src="deepseekv4prep/ing2.png" alt="N-grams by NLP: unigrams, bigrams, trigrams over the sentence This is a Sentence">
   <figcaption><strong>N-grams in NLP.</strong> N=1 gives unigrams (each token alone), N=2 gives bigrams (pairs), N=3 gives trigrams. Engram uses bigrams and trigrams as its memory keys.</figcaption>
 </figure>
 
@@ -310,7 +310,7 @@
 </p>
 
 <figure>
-  <img src="paper_fig1.png" alt="Figure 1 from the Engram paper: transformer block with Engram, and zoom-in showing 2-gram and 3-gram embedding lookup, concat, linear projections, scaled dot product gating, and short conv">
+  <img src="deepseekv4prep/paper_fig1.png" alt="Figure 1 from the Engram paper: transformer block with Engram, and zoom-in showing 2-gram and 3-gram embedding lookup, concat, linear projections, scaled dot product gating, and short conv">
   <figcaption><strong>Figure 1 from the paper.</strong> Left: the transformer block — Engram fires first, then attention, then MoE. Right: inside the Engram module — 2-gram and 3-gram embeddings are retrieved via hashing, concatenated, projected, and gated against the current hidden state via a scaled dot product. A short causal conv refines the output before the residual add.</figcaption>
 </figure>
 
@@ -390,7 +390,7 @@
 </p>
 
 <figure>
-  <img src="paper_fig2.png" alt="Figure 2 from the Engram paper: (a) training with All2All across sharded GPUs, (b) inference with tables offloaded to host memory and asynchronous prefetching">
+  <img src="deepseekv4prep/paper_fig2.png" alt="Figure 2 from the Engram paper: (a) training with All2All across sharded GPUs, (b) inference with tables offloaded to host memory and asynchronous prefetching">
   <figcaption><strong>Figure 2 from the paper.</strong> (a) Training: the embedding table is sharded across GPUs; an All-to-All primitive routes ID requests to their owning device and returns embeddings. (b) Inference: tables are offloaded entirely to host memory. Because retrieval is deterministic, the host can asynchronously prefetch the next batch's embeddings while the GPU runs the current batch's computation — overlapping communication and compute at negligible overhead (&lt;3%).</figcaption>
 </figure>
 
