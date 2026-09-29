@@ -1,0 +1,19 @@
+{
+  "framework": "axolotl",
+  "seq_len": 65536,
+  "tag": "mem-axolotl-hsoffload-64k",
+  "exit_code": 0,
+  "steps_completed": 6,
+  "trainable_params": 21031936,
+  "optimizer": "AdamW",
+  "tokens_per_step_measured": 65536,
+  "tokens_first_step": 65536,
+  "median_step_s": 40.13957452774048,
+  "mean_step_s": 40.13957452774048,
+  "stdev_step_s": null,
+  "timed_steps": 1,
+  "peak_reserved_gib": 73.021484375,
+  "peak_allocated_gib": 70.25665092468262,
+  "peak_smi_gib": 74.3046875,
+  "tokens_per_s": 1632.7029065718682
+}

@@ -1,0 +1,48 @@
+max_steps = 40
+output_dir = "/workspace/data/bench/runs/primerl-8k"
+dashboard = false
+
+[model]
+name = "zai-org/GLM-4.7-Flash"
+seq_len = 8192
+attn = "flash_attention_2"
+impl = "auto"
+ac_offloading = "None"
+optim_cpu_offload = false
+optimization_dtype = "bfloat16"
+
+[model.ac]
+mode = "full"
+
+[model.lora]
+rank = 16
+alpha = 32.0
+dropout = 0.0
+target_modules = [
+    "q_a_proj",
+    "q_b_proj",
+    "kv_a_proj_with_mqa",
+    "kv_b_proj",
+    "o_proj",
+]
+
+[data]
+type = "fake"
+batch_size = 4
+micro_batch_size = 1
+seq_len = 8192
+input_ids = "random"
+length = "fixed"
+seed = 42
+
+[optim]
+type = "adamw"
+lr = 0.0001
+
+[scheduler]
+type = "constant"
+
+[monitors.wandb]
+project = "glm47-flash-lora-bench"
+name = "primerl-8k"
+group = "primerl"

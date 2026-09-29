@@ -1,0 +1,24 @@
+diff --git a/src/prime_rl/trainer/sft/data.py b/src/prime_rl/trainer/sft/data.py
+index f0c1b53e4..d5d6f6437 100644
+--- a/src/prime_rl/trainer/sft/data.py
++++ b/src/prime_rl/trainer/sft/data.py
+@@ -98,6 +98,19 @@ class FakeDataset(StatefulIterableDataset):
+         self.seed = seed
+ 
+     def _draw_sample(self, generator: torch.Generator) -> tuple[int, list[int] | None]:
++        # BENCH PATCH: replay the shared axolotl `_synthetic` rows instead of fresh random ids
++        import os
++
++        if os.environ.get("BENCH_DATASET"):
++            if not hasattr(self, "_bench_rows"):
++                from datasets import load_from_disk
++
++                self._bench_rows = load_from_disk(os.environ["BENCH_DATASET"])["input_ids"]
++                self._bench_i = 0
++            row = self._bench_rows[self._bench_i % len(self._bench_rows)]
++            self._bench_i += 1
++            assert len(row) == self.seq_len, (len(row), self.seq_len)
++            return self.seq_len, list(row) + [row[0]]
+         # Consume this samples "randomness" - fast forwarding must replay it to restore the generator state
+         seq_len = (
+             int(torch.randint(1, self.seq_len, (1,), generator=generator).item())

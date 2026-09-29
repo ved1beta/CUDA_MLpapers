@@ -1,0 +1,11 @@
+{"event": "exit", "steps": 0, "smi_peak_gib": 0.0, "smi_error": null}
+{"step": 1, "t": 88.89026117324829, "step_time": null, "tokens": 32768, "max_reserved_gib": 77.765625, "max_allocated_gib": 77.11686658859253, "smi_peak_gib": 79.509765625, "trainable_params": 21031936, "optimizer": "AdamW"}
+{"step": 2, "t": 100.87344694137573, "step_time": 11.983185768127441, "tokens": 32768, "max_reserved_gib": 77.837890625, "max_allocated_gib": 77.22669315338135, "smi_peak_gib": 79.58203125}
+{"step": 3, "t": 112.82350182533264, "step_time": 11.95005488395691, "tokens": 32768, "max_reserved_gib": 77.416015625, "max_allocated_gib": 77.22669315338135, "smi_peak_gib": 79.58203125}
+{"step": 4, "t": 124.77770805358887, "step_time": 11.954206228256226, "tokens": 32768, "max_reserved_gib": 77.416015625, "max_allocated_gib": 77.22669315338135, "smi_peak_gib": 79.58203125}
+{"step": 5, "t": 136.71626830101013, "step_time": 11.938560247421265, "tokens": 32768, "max_reserved_gib": 77.416015625, "max_allocated_gib": 77.22669315338135, "smi_peak_gib": 79.58203125}
+{"step": 6, "t": 148.66968536376953, "step_time": 11.9534170627594, "tokens": 32768, "max_reserved_gib": 77.416015625, "max_allocated_gib": 77.22669315338135, "smi_peak_gib": 79.58203125}
+{"event": "exit", "steps": 6, "smi_peak_gib": 79.58203125, "smi_error": null}
+{"event": "exit", "steps": 0, "smi_peak_gib": 79.576171875, "smi_error": null}
+{"event": "exit", "steps": 0, "smi_peak_gib": 79.57421875, "smi_error": null}
+{"event": "exit", "steps": 0, "smi_peak_gib": 0.4580078125, "smi_error": null}

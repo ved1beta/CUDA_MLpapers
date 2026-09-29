@@ -1,0 +1,18 @@
+model: zai-org/GLM-4.7-Flash
+seq_len: 8192
+tag: unsloth-8k
+dataset: /workspace/data/bench/datasets/synthetic-8192
+output_dir: /workspace/data/bench/runs/unsloth-8k
+lora_r: 16
+lora_alpha: 32
+targets:
+- q_a_proj
+- q_b_proj
+- kv_a_proj_with_mqa
+- kv_b_proj
+- o_proj
+grad_accum: 4
+steps: 40
+lr: 0.0001
+seed: 42
+wandb_project: glm47-flash-lora-bench

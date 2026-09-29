@@ -1,0 +1,19 @@
+{
+  "framework": "llamafactory",
+  "seq_len": 8192,
+  "tag": "llamafactory-8k",
+  "exit_code": 0,
+  "steps_completed": 40,
+  "trainable_params": 21031936,
+  "optimizer": "AdamW",
+  "tokens_per_step_measured": 32768,
+  "tokens_first_step": 32768,
+  "median_step_s": 6.278242349624634,
+  "mean_step_s": 6.278660133906773,
+  "stdev_step_s": 0.011174287434881806,
+  "timed_steps": 35,
+  "peak_reserved_gib": 76.326171875,
+  "peak_allocated_gib": 71.87842559814453,
+  "peak_smi_gib": 78.03125,
+  "tokens_per_s": 5219.295174541828
+}

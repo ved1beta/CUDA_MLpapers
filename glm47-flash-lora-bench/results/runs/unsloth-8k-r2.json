@@ -1,0 +1,19 @@
+{
+  "framework": "unsloth",
+  "seq_len": 8192,
+  "tag": "unsloth-8k-r2",
+  "exit_code": 0,
+  "steps_completed": 40,
+  "trainable_params": 21031936,
+  "optimizer": "AdamW",
+  "tokens_per_step_measured": 32768,
+  "tokens_first_step": 32768,
+  "median_step_s": 4.791216135025024,
+  "mean_step_s": 4.793369735990252,
+  "stdev_step_s": 0.012849208203912733,
+  "timed_steps": 35,
+  "peak_reserved_gib": 59.322265625,
+  "peak_allocated_gib": 57.95946025848389,
+  "peak_smi_gib": 61.099609375,
+  "tokens_per_s": 6839.182177664138
+}

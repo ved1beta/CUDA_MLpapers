@@ -1,0 +1,50 @@
+base_model: zai-org/GLM-4.7-Flash
+plugins:
+- axolotl.integrations.cut_cross_entropy.CutCrossEntropyPlugin
+- axolotl.integrations.kernels.KernelsPlugin
+datasets:
+- path: synthetic
+  type: _synthetic
+  length: 25
+  sequence_length: 65536
+  min_input_id: 100
+  max_input_id: 32000
+  seed: 42
+dataset_prepared_path: /workspace/data/bench/prepared/axolotl-65536
+val_set_size: 0
+output_dir: /workspace/data/bench/runs/mem-axolotl-opt-64k
+sequence_len: 65536
+sample_packing: false
+pad_to_sequence_len: false
+adapter: lora
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.0
+lora_target_modules:
+- q_a_proj
+- q_b_proj
+- kv_a_proj_with_mqa
+- kv_b_proj
+- o_proj
+lora_mlp_kernel: false
+lora_qkv_kernel: false
+lora_o_kernel: false
+micro_batch_size: 1
+gradient_accumulation_steps: 1
+max_steps: 6
+optimizer: adamw_torch_fused
+lr_scheduler: constant
+learning_rate: 0.0001
+warmup_steps: 0
+bf16: true
+tf32: true
+gradient_checkpointing: true
+attn_implementation: kernels-community/flash-attn3
+logging_steps: 1
+save_strategy: 'no'
+seed: 42
+wandb_project: glm47-flash-lora-bench
+wandb_name: mem-axolotl-opt-64k
+use_kernels: true
+use_sonicmoe: true
+activation_offloading: hidden_states

@@ -1,0 +1,19 @@
+{
+  "framework": "primerl",
+  "seq_len": 4096,
+  "tag": "primerl-4k",
+  "exit_code": 0,
+  "steps_completed": 40,
+  "trainable_params": 21031936,
+  "optimizer": "AdamW",
+  "tokens_per_step_measured": 32768,
+  "tokens_first_step": 32768,
+  "median_step_s": 9.853608846664429,
+  "mean_step_s": 9.830284418378557,
+  "stdev_step_s": 0.13335648312484127,
+  "timed_steps": 35,
+  "peak_reserved_gib": 63.9453125,
+  "peak_allocated_gib": 62.123549461364746,
+  "peak_smi_gib": 66.203125,
+  "tokens_per_s": 3325.4821162393087
+}

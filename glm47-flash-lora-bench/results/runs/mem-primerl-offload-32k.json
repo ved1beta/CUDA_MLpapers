@@ -1,0 +1,19 @@
+{
+  "framework": "primerl",
+  "seq_len": 32768,
+  "tag": "mem-primerl-offload-32k",
+  "exit_code": 0,
+  "steps_completed": 6,
+  "trainable_params": 21031936,
+  "optimizer": "AdamW",
+  "tokens_per_step_measured": 32768,
+  "tokens_first_step": 32768,
+  "median_step_s": 12.250730752944946,
+  "mean_step_s": 12.250730752944946,
+  "stdev_step_s": null,
+  "timed_steps": 1,
+  "peak_reserved_gib": 71.96484375,
+  "peak_allocated_gib": 71.02299690246582,
+  "peak_smi_gib": 73.72265625,
+  "tokens_per_s": 2674.779216098837
+}

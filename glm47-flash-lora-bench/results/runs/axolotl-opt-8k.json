@@ -1,0 +1,19 @@
+{
+  "framework": "axolotl",
+  "seq_len": 8192,
+  "tag": "axolotl-opt-8k",
+  "exit_code": 0,
+  "steps_completed": 40,
+  "trainable_params": 21031936,
+  "optimizer": "AdamW",
+  "tokens_per_step_measured": 32768,
+  "tokens_first_step": 32768,
+  "median_step_s": 4.623489141464233,
+  "mean_step_s": 4.627129568372454,
+  "stdev_step_s": 0.015658930021181423,
+  "timed_steps": 35,
+  "peak_reserved_gib": 60.267578125,
+  "peak_allocated_gib": 59.566500186920166,
+  "peak_smi_gib": 61.720703125,
+  "tokens_per_s": 7087.288192402363
+}

@@ -1,0 +1,19 @@
+{
+  "framework": "axolotl",
+  "seq_len": 65536,
+  "tag": "mem-axolotl-opt-64k",
+  "exit_code": 0,
+  "steps_completed": 6,
+  "trainable_params": 21031936,
+  "optimizer": "AdamW",
+  "tokens_per_step_measured": 65536,
+  "tokens_first_step": 65536,
+  "median_step_s": 22.36208939552307,
+  "mean_step_s": 22.36208939552307,
+  "stdev_step_s": null,
+  "timed_steps": 1,
+  "peak_reserved_gib": 72.556640625,
+  "peak_allocated_gib": 70.25665044784546,
+  "peak_smi_gib": 73.84375,
+  "tokens_per_s": 2930.674269333724
+}

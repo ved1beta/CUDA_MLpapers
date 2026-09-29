@@ -1,0 +1,19 @@
+{
+  "framework": "unsloth",
+  "seq_len": 65536,
+  "tag": "mem-unsloth-64k",
+  "exit_code": 0,
+  "steps_completed": 6,
+  "trainable_params": 21031936,
+  "optimizer": "AdamW",
+  "tokens_per_step_measured": 65536,
+  "tokens_first_step": 65536,
+  "median_step_s": 37.77012896537781,
+  "mean_step_s": 37.77012896537781,
+  "stdev_step_s": null,
+  "timed_steps": 1,
+  "peak_reserved_gib": 73.6953125,
+  "peak_allocated_gib": 70.53494930267334,
+  "peak_smi_gib": 74.978515625,
+  "tokens_per_s": 1735.1277794172724
+}

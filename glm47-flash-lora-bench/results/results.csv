@@ -1,0 +1,34 @@
+run,framework,variant,kind,seq_len,status,steps_completed,tokens_per_step,mean_step_s,tokens_per_s,stdev_step_s,peak_reserved_gib,peak_allocated_gib,peak_nvidia_smi_gib,trainable_params
+axolotl-opt-4k,axolotl,FA3 + SonicMoE + CCE,throughput,4096,ok,40,32768,5.0049,6547.2,0.0376,58.8,58.25,59.99,21031936
+axolotl-opt-8k,axolotl,FA3 + SonicMoE + CCE,throughput,8192,ok,40,32768,4.6271,7081.7,0.0157,60.27,59.57,61.72,21031936
+axolotl-opt-16k,axolotl,FA3 + SonicMoE + CCE,throughput,16384,ok,40,32768,5.2715,6216.1,0.0131,62.94,62.21,64.13,21031936
+axolotl-reentrant-4k,axolotl,defaults (FA2) + CCE,throughput,4096,ok,40,32768,5.856,5595.6,0.0318,57.88,57.69,59.59,21031936
+axolotl-reentrant-8k,axolotl,defaults (FA2) + CCE,throughput,8192,ok,40,32768,6.2005,5284.7,0.0135,59.49,59.21,60.68,21031936
+axolotl-reentrant-16k,axolotl,defaults (FA2) + CCE,throughput,16384,ok,40,32768,7.8067,4197.4,0.0115,62.8,62.26,64.51,21031936
+unsloth-4k,unsloth,defaults (FA2),throughput,4096,ok,40,32768,4.3696,7499.1,0.0283,58.11,57.06,59.37,21031936
+unsloth-8k,unsloth,defaults (FA2),throughput,8192,ok,40,32768,4.7735,6864.5,0.0126,59.28,57.96,60.54,21031936
+unsloth-8k-r2,unsloth,"defaults (FA2), repeat",throughput,8192,ok,40,32768,4.7934,6836.1,0.0128,59.32,57.96,61.1,21031936
+unsloth-16k,unsloth,defaults (FA2),throughput,16384,ok,40,32768,6.5262,5021.0,0.004,61.35,59.77,62.62,21031936
+llamafactory-4k,llamafactory,defaults (FA2),throughput,4096,ok,40,32768,5.9408,5515.8,0.0248,66.29,64.02,67.48,21031936
+llamafactory-8k,llamafactory,defaults (FA2),throughput,8192,ok,40,32768,6.2787,5218.9,0.0112,76.33,71.88,78.03,21031936
+llamafactory-8k-r2,llamafactory,"defaults (FA2), repeat",throughput,8192,ok,40,32768,6.2608,5233.9,0.0054,76.33,71.88,77.52,21031936
+llamafactory-16k,llamafactory,defaults (FA2),throughput,16384,out_of_memory,0,,,,,,,,
+primerl-nocompile-4k,primerl,"FA2, bf16, no offload, compile off",throughput,4096,ok,40,32768,9.4849,3454.7,0.0415,63.95,62.12,66.2,21031936
+primerl-nocompile-8k,primerl,"FA2, bf16, no offload, compile off",throughput,8192,ok,40,32768,7.7512,4227.5,0.0165,70.66,67.66,72.4,21031936
+primerl-16k,primerl,"FA2, bf16, no offload, compile on",throughput,16384,ok,40,32768,8.3984,3901.7,0.0123,74.65,74.01,76.91,21031936
+primerl-4k,primerl,"FA2, bf16, no offload, compile on",throughput,4096,ok,40,32768,9.8303,3333.4,0.1334,63.95,62.12,66.2,21031936
+primerl-8k,primerl,"FA2, bf16, no offload, compile on",throughput,8192,ok,40,32768,7.9764,4108.1,0.0358,70.66,67.66,72.4,21031936
+primerl-8k-r2,primerl,"FA2, bf16, no offload, compile on, repeat",throughput,8192,ok,40,32768,7.9515,4121.0,0.1247,70.66,67.66,72.4,21031936
+primerl-nocompile-16k,primerl,"FA2, bf16, no offload, compile off",throughput,16384,ok,40,32768,8.442,3881.6,0.0076,74.65,74.01,76.91,21031936
+primerl-offload-16k,primerl,"FA2, bf16, activation + optimizer offload",throughput,16384,ok,40,32768,8.8205,3715.0,0.0118,71.91,70.87,73.66,21031936
+mem-axolotl-opt-32k,axolotl,FA3 + SonicMoE + CCE,memory,32768,ok,6,32768,7.1922,4556.0,,68.38,67.61,69.57,21031936
+mem-axolotl-opt-64k,axolotl,FA3 + SonicMoE + CCE + activation_offloading: hidden_states,memory,65536,ok,6,65536,22.3621,2930.7,,72.56,70.26,73.84,21031936
+mem-axolotl-reentrant-32k,axolotl,defaults (FA2) + CCE,memory,32768,ok,6,32768,11.6711,2807.6,,69.16,68.27,70.35,21031936
+mem-axolotl-hsoffload-64k,axolotl,defaults (FA2) + CCE + activation_offloading: hidden_states,memory,65536,ok,6,65536,40.1396,1632.7,,73.02,70.26,74.3,21031936
+mem-unsloth-32k,unsloth,defaults (FA2),memory,32768,ok,6,32768,10.4793,3126.9,,65.61,63.3,66.88,21031936
+mem-unsloth-64k,unsloth,defaults (FA2),memory,65536,ok,6,65536,37.7701,1735.1,,73.7,70.53,74.98,21031936
+mem-llamafactory-32k,llamafactory,defaults (FA2),memory,32768,out_of_memory,0,,,,,,,,
+mem-llamafactory-64k,llamafactory,defaults (FA2),memory,65536,out_of_memory,0,,,,,,,,
+mem-primerl-32k,primerl,"FA2, bf16, no offload",memory,32768,ok,6,32768,11.9534,2741.3,,77.84,77.23,79.58,21031936
+mem-primerl-64k,primerl,"FA2, bf16, no offload",memory,65536,out_of_memory,0,,,,,,,,
+mem-primerl-offload-32k,primerl,"FA2, bf16, activation + optimizer offload",memory,32768,ok,6,32768,12.2507,2674.8,,71.96,71.02,73.72,21031936

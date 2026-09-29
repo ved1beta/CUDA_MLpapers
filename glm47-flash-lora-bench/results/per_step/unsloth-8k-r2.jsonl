@@ -1,0 +1,44 @@
+{"event": "exit", "steps": 0, "smi_peak_gib": 0.0, "smi_error": null}
+{"step": 1, "t": 44.79213619232178, "step_time": null, "tokens": 32768, "max_reserved_gib": 59.3125, "max_allocated_gib": 57.80253553390503, "smi_peak_gib": 60.427734375, "trainable_params": 21031936, "optimizer": "AdamW"}
+{"step": 2, "t": 49.62577772140503, "step_time": 4.833641529083252, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 60.583984375}
+{"step": 3, "t": 54.43832731246948, "step_time": 4.812549591064453, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 60.583984375}
+{"step": 4, "t": 59.25015306472778, "step_time": 4.811825752258301, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 60.583984375}
+{"step": 5, "t": 64.09057760238647, "step_time": 4.840424537658691, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 6, "t": 68.91066980361938, "step_time": 4.82009220123291, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 7, "t": 73.71990704536438, "step_time": 4.809237241744995, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 8, "t": 78.52904319763184, "step_time": 4.809136152267456, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 9, "t": 83.36025381088257, "step_time": 4.831210613250732, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 10, "t": 88.18127036094666, "step_time": 4.821016550064087, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 11, "t": 92.98009634017944, "step_time": 4.798825979232788, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 12, "t": 97.77709889411926, "step_time": 4.797002553939819, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 13, "t": 102.5748062133789, "step_time": 4.7977073192596436, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 14, "t": 107.37503671646118, "step_time": 4.800230503082275, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 15, "t": 112.17246961593628, "step_time": 4.797432899475098, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 16, "t": 116.96708464622498, "step_time": 4.794615030288696, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 17, "t": 121.75664567947388, "step_time": 4.789561033248901, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 18, "t": 126.55505156517029, "step_time": 4.798405885696411, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 19, "t": 131.34619641304016, "step_time": 4.791144847869873, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 20, "t": 136.13692665100098, "step_time": 4.790730237960815, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 21, "t": 140.93027877807617, "step_time": 4.793352127075195, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 22, "t": 145.71349382400513, "step_time": 4.783215045928955, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 23, "t": 150.50470995903015, "step_time": 4.791216135025024, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 24, "t": 155.29326844215393, "step_time": 4.788558483123779, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 25, "t": 160.08078861236572, "step_time": 4.787520170211792, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 26, "t": 164.87298560142517, "step_time": 4.792196989059448, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 27, "t": 169.6612138748169, "step_time": 4.788228273391724, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 28, "t": 174.44705986976624, "step_time": 4.785845994949341, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 29, "t": 179.23958015441895, "step_time": 4.79252028465271, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 30, "t": 184.03773188591003, "step_time": 4.798151731491089, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 31, "t": 188.82505750656128, "step_time": 4.787325620651245, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 32, "t": 193.62502026557922, "step_time": 4.799962759017944, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 33, "t": 198.40902709960938, "step_time": 4.784006834030151, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 34, "t": 203.1901068687439, "step_time": 4.7810797691345215, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 35, "t": 207.9662446975708, "step_time": 4.776137828826904, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 36, "t": 212.74475240707397, "step_time": 4.778507709503174, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 37, "t": 217.52291631698608, "step_time": 4.778163909912109, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 38, "t": 222.30216693878174, "step_time": 4.779250621795654, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 39, "t": 227.08366775512695, "step_time": 4.781500816345215, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"step": 40, "t": 231.8585183620453, "step_time": 4.774850606918335, "tokens": 32768, "max_reserved_gib": 59.322265625, "max_allocated_gib": 57.95946025848389, "smi_peak_gib": 61.099609375}
+{"event": "exit", "steps": 0, "smi_peak_gib": 61.099609375, "smi_error": null}
+{"event": "exit", "steps": 40, "smi_peak_gib": 61.099609375, "smi_error": null}
+{"event": "exit", "steps": 0, "smi_peak_gib": 0.4580078125, "smi_error": null}
